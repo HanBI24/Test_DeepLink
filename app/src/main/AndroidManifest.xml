@@ -14,7 +14,9 @@
         android:theme="@style/Theme.TestApp"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".WebViewActivity" />
+        <activity
+            android:name=".WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LinkActivity" />
         <activity android:name=".SecondDeepLinkActivity" />
         <activity android:name=".SecondActivity" />
