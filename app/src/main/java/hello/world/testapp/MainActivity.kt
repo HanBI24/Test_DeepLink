@@ -48,6 +48,10 @@ class MainActivity : AppCompatActivity() {
             onDynamicLinkClick()
         }
 
+        binding.btnWebView.setOnClickListener{
+            startActivity(Intent(this@MainActivity, WebViewActivity::class.java))
+        }
+
         createAdapter()
     }
 
