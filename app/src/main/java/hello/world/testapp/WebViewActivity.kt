@@ -102,7 +102,6 @@ class WebViewActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun homeClick() {
-        startActivity(Intent(this@WebViewActivity, MainActivity::class.java))
         finish()
     }
 
