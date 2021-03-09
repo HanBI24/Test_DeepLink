@@ -9,9 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.dynamiclinks.DynamicLink
-import com.google.firebase.dynamiclinks.ShortDynamicLink
 import com.google.firebase.dynamiclinks.ktx.*
 import com.google.firebase.ktx.Firebase
 import hello.world.testapp.databinding.ActivityMainBinding
@@ -52,6 +50,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, WebViewActivity::class.java))
         }
 
+
+        binding.btnYoutube.setOnClickListener {
+            startActivity(Intent(this@MainActivity, YoutubeViewActivity::class.java))
+        }
         createAdapter()
     }
 
